@@ -1,75 +1,79 @@
-# Nuxt Minimal Starter
+# minimal-nuxt-v1
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Overview
+
+This is a minimal Nuxt 3 application built with Vue 3 and TypeScript. The project includes basic page routing, reusable components, and a default layout structure.
+
+## Tech Stack
+
+- **Framework**: Nuxt 3 (v3.16.2)
+- **Language**: TypeScript
+- **Frontend**: Vue 3 (v3.5.13)
+- **Routing**: Vue Router (v4.5.0)
+- **Dev Tools**: Nuxt DevTools enabled
 
 ## Setup
 
-Make sure to install dependencies:
+### Prerequisites
 
+- Node.js (LTS version recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository
 ```bash
-# npm
+git clone <repository-url>
+cd minimal-nuxt-v1
+```
+
+2. Install dependencies
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+3. Start development server
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+The application will be available at `http://localhost:3000`
 
-Build the application for production:
+## Usage
 
-```bash
-# npm
-npm run build
+### Available Scripts
 
-# pnpm
-pnpm build
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run generate` - Generate static site
+- `npm run preview` - Preview production build
 
-# yarn
-yarn build
+### Development
 
-# bun
-bun run build
+The app uses Nuxt 3's auto-import feature, so you don't need to manually import Vue components or composables.
+
+## Directory Structure
+
+```
+minimal-nuxt-v1/
+├── assets/           # Static assets (CSS, images, etc.)
+├── components/       # Vue components
+│   ├── Header.vue
+│   └── Footer.vue
+├── layouts/          # Layout components
+│   └── default.vue
+├── pages/            # Page components (auto-routed)
+│   ├── index.vue
+│   ├── about.vue
+│   └── products/
+│       └── [id].vue  # Dynamic route
+├── public/           # Public static files
+├── server/           # Server API routes
+├── app.vue           # Root component
+├── nuxt.config.ts    # Nuxt configuration
+└── types.ts          # TypeScript type definitions
 ```
 
-Locally preview production build:
+## License
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This repository is for personal/private use only.
